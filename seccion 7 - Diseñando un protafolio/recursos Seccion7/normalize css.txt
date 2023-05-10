@@ -1,5 +1,0 @@
-http://necolas.github.io/normalize.css/
-
-
-
-normaliza los estilos css, para que todas las paginas respondan igual.

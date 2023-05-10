@@ -1,2 +1,0 @@
-https://tinypng.com sirve para comprimir una imagen para fondo por ejemplo y que pese menos, asi la pagina 
-tarda menos en cargar.
