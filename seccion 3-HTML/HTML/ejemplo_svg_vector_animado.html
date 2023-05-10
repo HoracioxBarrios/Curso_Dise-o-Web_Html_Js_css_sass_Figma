@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<svg width="575" height="172">
+    <defs>
+      <filter id="filtro" x="0" y="0">
+        <feSpecularLighting in="SourceGraphic" result="light" specularConstant = "1.2" specularExponent = "12" lighting-color = "#bbbbbb">
+          <feDistantLight azimuth="240" elevation="20">
+            
+          <animate attributeName="azimuth" begin="0s" dur="4s"
+                   repeatCount="indefinite"
+                   values="0;360"/>
+            
+          </feDistantLight>
+        </feSpecularLighting>
+        
+        <feComposite in = "SourceGraphic" in2 = "light" operator = "arithmetic" k1 = "0" k2 = "1" k3 = "1" k4 = "0" />
+        
+      </filter>
+    </defs>
+    <rect width="575" height="210" fill="black" />
+    <image width="575" height="210" xlink:href="http://www.espai.es/blog/wp-content/uploads/2016/04/logo-espai-blanco.png" filter="url(#filtro)" />
+	</svg>
+</body>
+</html>
