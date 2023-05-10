@@ -1,0 +1,77 @@
+body {
+	background: #f2f2f2;
+	font-family: Arial, sans-serif;
+}
+
+/* Como dato para recordar los botones son de tipo linea, porque se 
+ponen uno al lado del otro.
+Para que se agrupen en una nueva linea abajo  por ejemplo los 4 botones de abajo los encerramos dentro de un div */
+
+div {
+	margin: 20px 0; /*20 pixeles arriba y abajo y 0 a los lados*/
+
+}
+/*estilos generales a la clase btn*/
+.btn {
+	
+	background: #32021f;/*https://coolors.co*/
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 15px 20px;/*15 arriba y abajo ; 20 a los lados*/
+
+	/*No olvidar poner display block, porque son enlaces los botones estos*/
+	display: inline-block;/*como esta en linea, hay que convertirlo a inline block */
+
+
+	margin: 0 16px; /*margen exterior del elemento 0 arriba y abajo ,y 16 a los lados*/
+}
+
+/* al pasar el mouse efecto en todos los botones */
+
+.btn:hover{
+	opacity: .8;
+}
+
+
+
+/*tamaños*/
+.small {
+	font-size: 14px;
+	padding: 10px 15px;
+
+}
+.medium {
+	font-size: 16px;
+	padding: 15px 20px;
+
+}
+.big {
+	font-size: 18px;
+	padding: 20px 25px;
+
+}
+.extra-big {
+	font-size: 20px;
+	padding: 25px 30px;
+
+}
+/* colores */
+.azul {
+	background: #246eb9;
+}
+.verde {
+	background: #4fb560;
+}
+.naranja {
+	background: #f9a03f;
+}
+
+
+
+/*Efectos*/
+/*clase para el efecto redondeado*/
+.border-radius {
+	border-radius: 100px;
+}
+

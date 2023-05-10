@@ -1,0 +1,13 @@
+.caja{
+    width: 200px;
+    height: 200px;
+    background: #df5708;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    /*si tienen texto:*/
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}

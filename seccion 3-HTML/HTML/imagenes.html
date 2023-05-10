@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Imagenes</title>
+</head>
+<body>
+	<img src="imagen/logotipo-flat.jpg" width="200" />	
+	<!--si nos equivocamos de extencion no nos va a cargar la imagen
+		lo mismo pasaria si no escribimos bien el nombre o la ruta de accso de la imagen.
+
+
+		para regresar un directorio se escribe :src="../logotipo-flat.jpg"
+
+		para regresar dos directorios atras en caso que la imagen se encuentre en otra carpeta rc="../../logotipo-flat.jpg" -->
+		
+		<br />
+		<img src="https://loremflickr.com/320/240?random=1"/><!--imagenes ramdon desde https://loremflickr.com-->
+
+		<br />
+		<img src="imagen/logotipo-flat.jp" width="200" alt="Logo de FalconMaster" /> <!--aca usamos el atributo alt para ponerle nombre a la imagen en caso que esta no se visualise. aca esta imagen tiene mal la extension, aunque tambien si cambia la ruta o el nombre no se va a poder ver-->	
+		<br />
+
+		<img src="imagen/logotipo-flat.jpg" width="200" alt="Logo de FalconMaster" title="Este es el logo de FalconMaster" /><!--atributo title para darle nombre a la imagen , se ve posicionando el puntero del mouse arriba de la foto-->
+		<br />
+		<img src="imagen/logotipo-flat.jpg" width="200" alt="Este es el logo de FalconMaster" title="Este es el logo de FalconMaster" /> <!--los atributos alt y title tienen el mismo nombre, se recomienda para que el buscador encuentre tu imagen mas facilmente-->
+		<br />
+		<br />
+		<br />
+
+		<a href="http://google.com">
+			<img src="https://loremflickr.com/320/240?random=1"/>
+		</a><!--las imagenes se pueden encerrar dentro de otro enlace. aca en la imagen queremos que nos envie a google.com-->
+
+
+		<br />
+		
+		<a href="http://google.com">ir a google</a> <!--sera como esto pero en ves del texto va la imagen-->
+
+</body>
+</html>

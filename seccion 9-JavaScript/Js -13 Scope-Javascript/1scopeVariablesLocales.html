@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables Locales</title>
+</head>
+<body>
+    <script>
+        //Nuestras variables pueden ser de 2 tipos: local y Global
+
+        //---- Ejemplo Variable local
+        function saludo(){
+            var texto = 'Hola Mundo';
+            console.log(texto); //console.log PUEDE hacer uso de la variable texto porque es local dentro de la funcion. 
+        }
+        saludo();
+        //console.log(texto); //aca NO puede hacer uso de la variable dentro de la funcion
+
+
+        //La variable local solo se puede hacer usa dentro de una funcion. o de una funcion ANIDADA.
+
+        /*
+        # Las variables locales son las que han sido creadas dentro de una
+        funcion o de una funcion anidada (una funcion dentro de otra)
+        */
+    </script>
+</body>
+</html>

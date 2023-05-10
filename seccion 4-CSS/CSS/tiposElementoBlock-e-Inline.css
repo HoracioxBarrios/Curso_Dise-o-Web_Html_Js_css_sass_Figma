@@ -1,0 +1,53 @@
+body	{
+	background: #f2f2f2;
+	font-family: Arial;
+	
+}
+
+/*#### elementos del tipo block abarcan el 100% del espacio disponible*/
+
+h1, p, div {
+	background: #ccc;
+	padding: 10px;
+	width: 500px; /*tambien se podria modif en alto y los margenes facilmente*/
+
+
+	display: inline-block;/*aca se pone al lado como si fuera inline*/
+}
+
+
+
+
+
+
+
+/*#### elemento de tipo inline solo abarcan el espacio q necesitan*/
+a {
+	color: #fff;
+	background: #000;
+
+
+	display: inline-block; /*para transformar el tipo de elemento usamos dusplay en este caso esta predef inline
+	                       y lo comvertimos a inline block para que se comporte como bloque tamb. asi no se desborda*/
+	padding: 10px;
+	width: ;
+	height: 50px;
+	/*si se agrega padding asi: se desborda, porque a los elem
+	de tipo linea no se le puede dar estas propiedades por ejemplo: ;
+	padding ,width, heigth. aunque se pueden convertir usando display para usarlos.
+	 */
+}
+
+
+
+
+
+
+/*  #Algunos Elementos "Block" :son todos los CONTENEDORES abarcan el 100% del espacio disponible!
+Div, Article, Section, Header,footer,aside,table,p,video,ul,ol,h1 al h6*/
+
+
+/* #Algunis Elementos "Inline" 
+a, span, img,b ,i, small, cite, code, em, strong, br, script, 
+button, input, label, select, textarea*/
+

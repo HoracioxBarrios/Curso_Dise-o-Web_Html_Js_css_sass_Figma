@@ -1,0 +1,11 @@
+/*Estructura de una regla css
+h1       Selector, el elemento al que le queremos aplicar los efectos
+color    Propiedad, efecto o cambio que queremos aplicar
+blue     valor que le damos a la propedad*/
+
+h1{
+	color: blue;
+}
+p{
+	color: red;
+}

@@ -1,0 +1,83 @@
+body {
+	font-family: Arial, sans-serif;
+	background: #f2f2f2;
+}
+
+div, a {
+	background: #ccc;
+}
+
+a {
+	/*display: block;*/
+	/*display: none; lo elimina en el navegador y nos quita ese lugar o espacio*/
+	/*visibility: hidden; con esto lo ocultamos y nos usa el espacio se usa con js*/
+
+
+	/*lo de abajo es para darle efectos al ejemplo del .contenedor2*/
+	background: #246eb9;
+	color:#fff ;
+
+	display: inline-block;/*para dale padding como los enlaces son inline hay que darle que tenga esa propiedad de bloque. INLINE-BLOCK */
+	padding: 20px;
+	text-decoration: none;
+}
+
+
+/* Tipos de Display mas usados: inline ° block ° none ° inline-block ° Flex  */
+
+
+
+/*otro ejemplo abajo*/
+
+.caja {
+	color: #fff;
+	background: #4fb560;
+	margin: 20px 0;
+	width: 200px;
+	height: 200px;
+	overflow: auto;/*con auto no desborda el contenido y nos pone una barra scroll*/
+	/*overflow: hidden; con hidden oculpamos lo que sobre sale*/
+
+
+}
+
+
+/* con overflow podemos solucionar el error de posicionamiento flotante */
+
+.contenedor {
+	width: 600px;
+	background: #ccc;
+	margin: 20px 0;
+	overflow: hidden; /*si no ponemos esta propiedad se desaparece el contenedor*/
+}
+.izq {
+	float: left;
+}
+
+.der {
+	float: right;
+}
+
+
+/* otro ejemplo */
+
+.contenedor2 .caja {
+	width: 150px;
+	height: 150px;
+
+	position: relative;
+}
+
+.azul {
+	background: #009ddc;
+	z-index: 100;
+}
+.gris {
+	background: #32021f;
+	left: 50px ; /*como la caja padre tiene posicion relativa podemos mover estas cajas a donde quedamos*/
+	bottom: 80px;
+	/*con estos cambios esta caja se mueve por encima de la otra y para decidir que caja
+	se va a superponer arriba de la otra se usa z.index y el valor que sea mas alto va a estar primero y el valor mas bajo 
+	va a quedar oculto detras*/
+	z-index: 95;
+}

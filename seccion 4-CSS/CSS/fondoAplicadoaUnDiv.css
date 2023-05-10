@@ -1,0 +1,7 @@
+.fondo {
+	width: 600px; /*ancho*/
+	height: 600px;/*alto*/
+	background: url(img/fondoOriginal.jpg) #000;/*si la img no carga nos pone el color negro como alternativa*/
+	background-repeat: no-repeat;
+	background-size: 50%;/*que ocupe el 50% del ancho del contenedor*/
+}

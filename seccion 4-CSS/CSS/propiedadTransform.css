@@ -1,0 +1,32 @@
+.caja {
+	background: #ffaa5a;
+	width: 200px;
+	height: 200px;
+	/*transform: translate(200px, 50px);200 de izq a der y 50px de arriba a abajo*/
+	/*transform: translateX(200px);*/
+	/*transform: translateY(50px);*/
+	/*transform: scale(1.1,1.1); */
+	/*transform: rotate(20deg);deg = a grados de rotacion*/
+	/*transform: skew(20deg, 0deg); sesgado = deformado jaja*/
+	transform: translate(200px, 100px) scale(1.5, 1.5) rotate(10deg);
+	/*aca estamos trasladando 200px a la derecha y 100px abajo, que escale y que rote
+	y entre valores no lleva coma solo espacio.
+	*/
+	-moz-transform: translate(200px, 100px) scale(1.5, 1.5) rotate(10deg);
+	-webkit-transform: translate(200px, 100px) scale(1.5, 1.5) rotate(10deg);
+	/*esta es la forma correcta usar las 3 formas; aunque ya todos los navegadores soportan el de arriba*/
+}
+
+
+/* 
+cosas que podemos hacer con transfor:
+-trasladar elementos -traslate
+-escalar elementos(que crescan o achiquen)-
+-rotar elementos - 
+sesgar elementos - 
+ */
+
+
+/* a diferencia de la propiedad position (ejemplo relatva) el transform se 
+usa para animaciones */
+

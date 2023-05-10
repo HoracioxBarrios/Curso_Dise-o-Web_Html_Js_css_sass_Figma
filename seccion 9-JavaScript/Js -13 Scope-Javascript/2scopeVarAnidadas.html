@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables con Funciones Anidadas</title>
+</head>
+<body>
+    <script>
+        // variavle local con Funciones anidadas
+        // IMPORTANTE : se puede hacer uso de una variable buscando DESDE DENTRO HACIA AFUERA!
+        
+        function saludo(){
+            var texto = 'hola Mundo';//2 se ejecuta (hola mundo se guarda en la variable texto)
+
+            function mensaje(){
+                //var texto = 'modificado';   // IMPORTANTE: simpre va a buscar la variable de este nombre (texto en este ejemplo ), en su scope y si no la encuentra va a subir un nivel simpre que la funcion sea anidada.
+                console.log(texto); //aca accede a la variable texto para mostrarla por consola
+                //las variables locales se pueden accder de dentro hacia afuera (por eso podemos usar la var texto) 
+            }
+            mensaje();// 3llama a esta funcion
+        }            //5 se ejecuta mensaje() y pasa a el valor a saludo()  - Fin
+        saludo();//1 aca llamamos a la funcion
+                //6 
+        
+
+        // la REGLA es : podemos buscar variables y hacer uso desde DENTRO hacia AFUERA.
+        // pero desde una funcion no podemos buscar variables dentro de otra funcion. osea buscar hacia DENTRO PORQYE ESTAN PROTEGIDAS!
+
+        //ejemplo de lo que NO se puede:
+        /*
+        function saludo(){
+
+            function mensaje(){
+                var texto = 'Dentro de una Funcion';
+            }
+
+            console.log(texto);//aca buscamos la variable dentro de otra funcion. DESDE FUERA HACIA ADENTRO , NO SE PUEDE.
+            mensaje();
+        }
+        saludo();
+        */
+    </script>
+</body>
+</html>

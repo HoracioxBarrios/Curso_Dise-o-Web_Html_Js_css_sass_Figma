@@ -1,0 +1,25 @@
+// esto se importa al archivo estilos.scss
+// ver que el archivo empieza con guion bajo
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: #0a090a;
+}
+
+//al contenedor lo toma como estilos generales
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    //margin: 20px;
+    
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos y Propiedades para Arrays</title>
+</head>
+
+<body>
+    <script>
+
+        // metodo Length  >>>>>> (permite ver cuantos elementos tiene un array)
+        // Metodo Join    >>>>>>>(permite juntar todos nuestro arreglo y mostrarlo en una cadena de texto, por ejemplo con un guion en medio)
+        // Metodo Pop y Push  >>>>>>>  (pop elimina un elemento y Push agrega un alemento al FINAL)
+        // Metodo Shift y unShift >>>>> esto es como el anterior ,nomas para el INICO
+        // Metodo Concat   >>>>>> (permite concatenar dos ARRAYS)
+        // Metodo Sort y Reverse >>>> (permite ordenar alfabeticamente los elementos, no ordena numeros!!!)
+
+
+
+
+
+
+
+
+        var amigos = ['Carlos', 'Alejandro', 'Cesar', 'Pepe'];
+
+        // ########## Metodo Length 
+        //document.write(amigos.length); // no poner asi:document.write(amigos.length());   ya que amigos.length no es una funcion ,noponer parentesis de mas!
+
+
+
+        //########## Metodo Join 
+        //document.write(amigos.join('-')); //en una cadena de texto separado por un guion.
+        // otro jemeplo (juntamos todo lo del array y lo guardamos en una variable)
+
+        /* var cadenaTexto = amigos.join('-');
+            document.write(cadenaTexto);
+         */
+
+
+
+        //########## Metodo pop y Push
+        /* amigos.pop();
+        console.log(amigos); //muestra: 'Carlos', 'Alejandro','Cesar'  porque borro el ultimo.*/
+
+        /* amigos.push('Goku'); //agregamos un elemento al FINAL
+            console.log(amigos);
+         */
+
+
+        //########## Metodo Shift y unShift 
+        /*amigos.shift();   Borra el primero
+        console.log(amigos);*/
+
+        /* amigos.unshift();agregamos 1 elem al INICIO
+        console.log(amigos); */
+
+        //########## Metodo Concat 
+        //var amigos2 = ['Felix','Zed' ];
+        //si queremos que el total de amigos esten en un solo arreglo:
+
+        // amigos.concat(amigos, amigos2);    a esto hay que guardarlo en una nueva variable, ver abajo:
+        /*var todosMisAmigos = amigos.concat(amigos2);
+        console.log(todosMisAmigos);*/
+
+
+        //########## Metodo Sort y Reverse 
+        amigos.sort()
+
+        //console.log(amigos);
+
+
+        amigos.reverse();
+        console.log(amigos);  //clg = console.log(Objeto);
+
+        //primero ordenar con sort y luego usar reverse para dar la vuelta!!!
+
+    </script>
+</body>
+
+</html>

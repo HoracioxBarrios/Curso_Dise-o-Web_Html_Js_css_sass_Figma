@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Etiquetas de Maquetado</title>
+</head>
+<body>
+	<!--<div>               div nos sirve de contenedor 
+		<h1></h1>
+		<a href=""></a>
+		<img src="" alt="">
+
+	</div>-->
+	<!-- si tenemos que estructurar la pagina que hicimos en figma lo arimos usando Div asi: aunque no es recomendable ya que el Div no es semantico -->
+
+
+	<!-- 
+		==================================================================
+		Esta forma no se hace porque no es semantico, asi era como se hacian los sitios web antes de html5! -->
+	<div class="header">
+		<div class="nav"></div>
+	</div>
+	<div class="main"></div> <!-- main para contenido prncipal -->
+	<div class="footer"></div> <!--pie de pagina  -->
+
+	<!-- =================================================================
+	Esta forma seria mas correcta porque es semantico y es usado por el buscador / google por ejemplo; nueva implementacion para html5-->
+
+	<header>
+		<nav>
+			<a href="#">acerca de </a>
+			<a href="#">trabajos</a>
+			<a href="#">contactos</a>
+		</nav>
+	</header>
+
+	<section></section>
+
+	<article></article>
+	<p></p>
+
+	<footer>
+		<section class="contacto"></section>
+		<section class="redes-sociales"></section>
+	</footer>
+
+</body>
+</html>
+
+
+<!--Los elementos semanticos son aquellos que definen cual es el contenido que tendran dentro, y le sirven a los buscadores-->
+
+<!--Los elementos No semanticos son los que no definen cual será el contenido dentro-->
+<!--Div sirve de contenedor para cualquier elementos , no tiene sentido semantico  -->
+<!--header nos permite establecer eñ encabezado de nuestra pag web  -->
+<!-- nav nos permite definir un conjuntos de enlaces de navegacion -->
+<!--section define una seccion en un documento que puede contener un grupo de contenido  -->
+<!--article define un articulo  -->
+<!--aside nos permite definir un area con contenido independiente al principal, como el sidebar  -->
+<!--footer nos permite establecer el pie de pagina de un documento  -->

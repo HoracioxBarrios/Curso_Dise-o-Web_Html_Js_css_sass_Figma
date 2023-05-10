@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #000500;
+}
+
+.galeria {
+	width: 100%; /*es importante poner % para que sea adaptable, lo vamos a ver mas adelante*/
+}
+
+.galeria img {
+	vertical-align: top; /*con esto eliminamos el espaciado vertical de las imagenes*/
+	width: 400px; /*cada imagen 400 pixeles de ancho . Esta pagina no es adptable a dispositivos mov, ya que es un ejemplo simple nomas*/
+	margin: 20px;
+	padding: 5px;
+	border: 1px solid #484848;/*borde gris*/
+	opacity: 0.5; /*la opacidad va del 0 al 1. aca lo que hacemos es oscurecer la pagina un poco*/ 
+}
+
+
+
+/* aca con hover sobre la imagen jugando con la opacidad damos este efecto: */
+.galeria img:hover{
+	border:1px solid #fff ; /*borde blanco*/
+	opacity: 1;
+
+}
+
+
+/* https://unsplash.com/es */
