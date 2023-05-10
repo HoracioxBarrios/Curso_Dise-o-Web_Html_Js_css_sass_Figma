@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    <script>
+        /*############ if 
+        if(Condicion){
+            codigo
+        }*/
+        
+
+        var edad =17;
+        if(edad > 18){
+            document.write('Sos mayor de edad');
+        }
+
+        if(edad < 18){
+            document.write('Sos menor de edad');
+        }
+        
+
+
+
+        // el codigo de arriba obtimizado con if /else seria:
+        // ####### if, else
+
+        var edad = 18;
+        if(edad >= 18){
+            document.write('sos mayor de edad');
+        } else {
+            document.write('sos menor de edad');
+        }
+
+
+        // #### if, else If, else (evalua una vez,sino evalua otra opcion, sino es esto otro,)
+
+        var pais = 'España';
+        if(pais == 'Mexico'){
+            document.write('sos de mexico');
+        }else if( pais == 'España'){
+            document.write('sos de España');    
+        } else {
+            document.write('sos de otro pais');
+        }
+
+
+
+        //si esto se hace mas largo se puede usar SWITCH
+        // ######### switch
+        switch(pais){
+            case 'Mexico':
+                document.write('so de mexico');
+                break;
+            case 'España':
+                document.write('sos de españa');
+                break;
+            default:
+            document.write('sos de otro pais ');
+                break;
+        }   
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	background: #f1f1f1;
+	width: 1920px;
+	height: 1080px;
+	margin:20px;
+	position: relative;
+
+
+}
+
+.cajaUno {
+	background:#921BED;
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	margin: 10px;
+}
+
+.cajaDos {
+	background: #C195F3;
+	width: 500px;
+	height: 500px;
+	margin: 10px;
+	position: absolute;
+}

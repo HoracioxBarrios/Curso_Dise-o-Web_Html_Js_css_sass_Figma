@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo For</title>
+</head>
+<body>
+    <script>
+        /*  estructura: 
+        for(iniciacion; condicion; actualizacion){
+            codigo a repetir
+        }*/
+        //declarar variable, puede empezar en 0 o en 1
+
+
+        //-----------Ciclo del 1 al 10
+        /*for(var i =1; i <= 10; i++ ){//declaramos una variable i por ejemplo; ponemos la condicion; incrementamos el valor de i
+            document.write(i);
+            document.write('<br>');
+        }*/
+
+        //-----------Ciclo del 10 al 1
+        /*for(var i =10; i>= 1 ; i--){
+            document.write(i);
+            document.write('<br>');
+        
+        }*/
+
+
+        //la mayoria de las veces for se inicia en 0 ,para recorrer arrays
+        var meses =['Enero', 'Febrero','Marzo', 'Abril', 'Mayo', 'Junio',
+                    'Julio', 'Agosto','Septiembre','Obtubre','Noviembre','Diciembre']
+        
+        for(var i = 0; i< meses.length; i++){
+            //document.write(meses[i]);
+            document.write(i+1 + '.-'+ meses[i]);  //i+1 + '.-'+     concatenamos aca como para ejemplo nomas.
+            document.write('<br>');
+        }
+
+        //Otra forma de recorrer un array:   -------------for in
+        /*for (variable in Object){
+            //statement
+        }*/
+
+        /*for (mes in meses) { // variable mes in array meses (extraemos por cada vuelta un item del array y lo guardamos en la variable mes)
+            document.write(meses[mes]);//en cada vuelta se muestra la variable mes
+            document.write('<br>');// salto de linea
+        }*/
+
+
+
+
+    </script>
+</body>
+</html>

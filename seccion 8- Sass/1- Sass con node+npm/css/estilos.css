@@ -1,0 +1,21 @@
+body {
+  background: #f2f2f2;
+}
+
+.articulo {
+  background: rgb(217, 185, 231);
+}
+.articulo .titulo {
+  color: #000;
+}
+.articulo .autor {
+  color: #000;
+}
+.articulo p {
+  color: #da1313;
+}
+.articulo p a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=estilos.css.map */

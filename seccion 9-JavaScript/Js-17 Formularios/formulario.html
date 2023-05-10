@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="" name="formulario" id="formulario">
+        <input type="text" name="nombre" placeholder="nombre">
+
+        <input type="radio" name="sexo" id="hombre">
+        <label for="hombre">Hombre</label>
+
+        <input type="radio" name="sexo" id="mujer">
+        <label for="mujer">Mujer</label>
+
+        <input type="checkbox" name="terminos" id="terminos">
+        <label for="terminos">Terminos</label>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <script>
+        //var formulario = document.getElementById('formulario')[0];
+        var formulario = document.getElementById('formulario');
+        //accedemos mediante su name, ya que en la var formulario tenemos todo el html (form) y dentro sus hijos ponemos formulario. y podemos llamar a sus hijos.
+        var nombre = formulario.nombre;
+        var sexo = formulario.sexo;
+        var terminos = formulario.terminos;
+
+        function validar (e){
+            //validando el nombre
+            if(nombre.value > 18){ // compara si ingresamos numeros!!!!
+                alert('max excedido');
+            } else if (nombre.value == ''){// corrobora que no esté vacia la casilla nombre
+                alert('por favor ingresa un nombre');
+            }
+
+            //validamos los radio buttom * solo si no fueron selecionados ningunos en este ejemplo.
+            if(sexo[0].checked == false && sexo[0].checked == false){// si los dos son falsos significa que no fueron seleccionados ninguno de ellos
+                alert('por favor ingresa un sexo');
+            }
+
+
+
+            //si usamos evento .checked en la consola por ejemplo terminos.checked nos da por defecto  false, pero si tildamos la casilla nos da true
+            //validamos los terminos y condiciones 
+            if(terminos.checked == false ){// sabemos que es falso si no esta tildado y si es igual a falso la condicion es VERDADERA
+                alert('acpta los terminos')
+            }
+
+            
+
+
+            //EVITAMOS QUE SE ENVIE EL FORMULARIO
+            e.preventDefault(); //variable "e" por ejemplo seguido del metodo .preventDefault() camcela el envio o evento, es decir Esto evita que la tarea de implementación ejecute la acción por defecto asociada con el evento. debemos pasar "e"como parametro de salida
+        }
+        formulario.addEventListener('submit' , validar);
+    </script>
+</body>
+</html>

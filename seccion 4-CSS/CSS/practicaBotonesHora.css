@@ -1,0 +1,45 @@
+body {
+	font-family: arial;
+}
+div {
+	margin: 20px 0;
+}
+.btn {
+	background:  #FE2E64;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 15px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 10px;
+
+	
+}
+
+
+
+
+
+
+.btn:hover{
+	opacity: .8;
+}
+
+/* colores */
+.rosa {
+	background:#a4769b ;
+}
+
+.verde {
+	background: #04B431;
+}
+
+/* medidas */
+.big {
+	font-size: 25;
+	padding: 25px 30px;
+}
+.extra-big {
+	font-size: 30;
+	padding: 30px 25px;
+}

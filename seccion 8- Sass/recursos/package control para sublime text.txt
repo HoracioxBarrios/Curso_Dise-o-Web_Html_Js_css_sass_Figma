@@ -1,0 +1,4 @@
+https://packagecontrol.io/installation  
+
+
+sirve para instalar componentes o librerias, themes de colores, y mas ... para sublime text

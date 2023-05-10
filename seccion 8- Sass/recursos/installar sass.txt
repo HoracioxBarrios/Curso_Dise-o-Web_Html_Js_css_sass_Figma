@@ -1,0 +1,7 @@
+en la linea de comando ruby (start comand prompt with Ruby ) escribir:
+
+gem install sass
+
+cuando descarge sass podes corroborar escribiendo:
+
+sass -v

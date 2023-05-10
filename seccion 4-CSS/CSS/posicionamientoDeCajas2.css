@@ -1,0 +1,61 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background:#f2f2f2 ;
+}
+
+/* 
+Tipos de Posicionamiento:
+
+- Static (Normal o predefinida) : Posiconamiento por defecto que los navegadores ponen por defecto.
+
+- Ralative (Relativo): Nos permite posicionar una caja y despues moverla desde su lugar original.
+
+- Absolute (Absoluta): Nos permite Posicionar una caja respecto a su contenedor y el
+resto de los elementos ignoran la nueva posicon.
+
+-Fixed (Fijo): Nos permite posicionar una caja en donde su posicion respecto a la 
+pantalla del user va a ser siempre la misma.
+
+-Float (flotante  : Nos permite desplazar las cajas que estan en bloque todas a su derecha 
+ o izq . actua como si fueran en linea. )
+
+
+como es un div es un elem de tipo bloque le vamos a decir que tenga ancho y alto*/
+
+
+
+
+/*###################### posicionar una caja dentro de otra ############################*/
+
+.caja {
+	width: 200px;
+	height: 200px;
+	background: #0e6ba8;
+	margin: 20px;/*espaciado entre las cajas*/
+
+}
+
+.cajaPadre {
+	margin: 20px;
+	background: #2e294e;
+	width: 500px;
+	height: 500px;
+	position: relative;/*caja padre posicion relative*/
+}
+
+
+.posicionada {/*caja hijo absolute*/
+	background: #bc3908;
+
+	position: absolute; 
+	top: ;
+	right: 0%; 
+	bottom: 0%;
+	left: ;
+
+	
+	
+}

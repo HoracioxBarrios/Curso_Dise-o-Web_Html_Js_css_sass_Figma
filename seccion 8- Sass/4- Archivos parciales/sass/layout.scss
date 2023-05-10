@@ -1,0 +1,28 @@
+@import "generales";
+@import "header";
+@import "main";
+@import "aside";
+@import "footer";
+
+/*A los archivos parciales hay que darle nombre con el guion bajo (ejemplo: _header ) e importalos en el archivo principaL que se va a compilar a css; ese layout.css es el que se 
+linkea al html para que el navegador lo interprete.
+
+
+//el archivos llamarlo entre comillas en .scss
+//en el caso de .sass se llamaria: @import generales
+
+
+
+
+
+
+//@import "mediaQuerys";  en caso que tengamos responsive hariamos un archivo _ y lo llamariamos aca.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+/* https://fonts.google.com      804fuentes tiene
+https://www.fontsquirrel.com*/
+@font-Face { /*selector para agregar fuentes desde internet por ejemplo*/
+	font-family:"Roboto-Light";/*nombre de la fuente descargada*/
+	src: url("fonts/Roboto-Light.ttf");/*ubicacion de la fuente*/
+}
+
+@font-Face {
+	font-family:"Roboto-BoldItalic";
+	src: url("fonts/Roboto-BoldItalic.ttf");
+}
+
+@font-Face {
+	font-family:"Roboto-Thin";
+	src: url("fonts/Roboto-Thin.ttf");
+}
+
+
+
+
+
+body {
+	font-family: "Roboto-Light";
+}
+
+
+h1 {
+	font-weight: normal;
+}
+
+p {
+	font-family:"Roboto-BoldItalic";
+}
+/* 2da forma es ir a google fonts y selec la fuente leugo pegar el link html y pegar aca o escribir el nombre de la fuente aca */
+h3 {
+	font-family: 'Oswald', sans-serif;
+}

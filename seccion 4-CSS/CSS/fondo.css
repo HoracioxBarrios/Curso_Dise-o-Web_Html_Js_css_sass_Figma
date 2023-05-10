@@ -1,0 +1,68 @@
+/* si le queremos agregar un fondo que ocupe el 100% tenemos qie 
+hacerlo agrenadolo al body */
+
+/* ejemplo color grey
+body	{
+	background:grey;
+}
+
+*/
+
+/* tambien podemos buscar un color hexadecimal de la pag 
+https://html-color-codes.info/codigos-de-colores-hexadecimales/
+y usarlo de la siguiente manera
+ */
+/*
+ body {
+ 	background: #DF7401;
+ }
+ */
+/* para usar una imagen de fondo: */
+
+/* imagen muy grande
+body {
+	background: url("img/fondoOriginal.jpg");
+}
+*/
+
+
+
+/* si la imagen es pequeña se va a repetir aca le pedimos que no lo repita
+body {
+	background: url("img/fondoSmall.jpg");
+	background-repeat: no-repeat;
+}
+*/
+/* para que se repita horizontalmente y si ponemos repeat -y verticalmente
+body {
+	background: url(img/fondoSmall.jpg);
+	background-repeat:repeat-x;
+}
+*/
+
+body {
+	/*background: #70a4e8;*/
+	background: url(img/fondoOriginal.jpg);
+	background-repeat:no-repeat ;
+	/*background-size: 500px; se puede editar solo el ancho y el alto sera automatico*/
+	/*background-size:100% ; aca ocupa el 100% de la pagina*/
+	background-size: cover;/*se pone cover para que ocupe el 100% del ancho del contenedor padre, es el que mas se usa*/
+	/*background-size: contain;*se usa contain para que ocupe el ancho y el alto del contenedor padre*/
+
+	background-attachment: fixed; /*permite moverte con el scroll en la pagina tiene que haber contenido para 
+	scrolear. esta predefinido en el valor scroll aunque tambien se puede poner valor fixed
+	 en fixed el fondo es estatico y se escrollea el contenido y, en scroll se escrolea el fondo y el contenido*/
+	 /*este de arriba va de la mano con :background posistion:*/
+	 background-position: center center;
+
+
+	/*lo de arriba se puede resumir de esta manera: */
+
+	/*background: url(img/fondoOriginal.jpg) no-repeat fixed center center;
+	background-size: 500px;*/
+
+
+
+
+
+}

@@ -1,0 +1,23 @@
+.texto {
+	/*text-shadow: 10px 0px 0px #000; primer valor modifica la sombra horizontalmente*/
+	/*text-shadow: 0px 10px 0px #000; segundo valor modif. verticalmente */
+	/*text-shadow: 0px 0px 10px #000; /*3er valor modfca el tamaño de la sombra mientras mas alto el valor mas se difumina */
+	/* no se recomienda usar sombras en los textos */
+
+	color: #fff;
+	text-shadow: 2px 0px 10px blue;
+
+
+}
+.caja {
+	width: 200px;
+	height: 200px;
+	background: #f79256;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);/*1er valor izq a der / 2do valor arriba/abaj y /3er valor tranparecicia*/
+
+	/*-webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, .5); 
+	moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);  como antes no habia soporte se ponia estos asi tambien */
+}
+
+/* rgba(0, 0, 0, .5) red,green,blue y el 4to valor la transparencia */
+

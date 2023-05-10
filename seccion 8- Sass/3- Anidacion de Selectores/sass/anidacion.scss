@@ -1,0 +1,46 @@
+
+//colores
+$primario:#f9a03f;
+
+
+
+body {
+    background: #1b3d82;
+    font-family: Arial, Helvetica, sans-serif;
+}
+//ejemplo de anidacion 
+.articulo {
+    background: #e9f1f7;
+    width: 500px;
+    padding: 20px;
+    .titulo {
+        color: $primario;
+    }
+
+    .autor {
+        color: #4d5061;
+    }
+    p {
+        a {
+            color: $primario;
+        }
+    }
+
+    div {
+        text-align: center;
+        a {
+            text-decoration: none;
+            font-size: 25px;
+            color: $primario;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+//& para entrar al seudoElemento hover por ejemplo
+// los comentarios no se muestran en el css compilado
+
+/*El carácter especial & siempre se reemplaza por el selector padre tal y como aparece en el archivo CSS. 
+Esto significa que si tiene una regla anidada, primero se calcula el selector padre completo y después se reemplaza por &.*/

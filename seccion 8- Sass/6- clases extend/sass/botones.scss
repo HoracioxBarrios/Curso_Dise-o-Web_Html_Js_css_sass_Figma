@@ -1,0 +1,32 @@
+body {
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 20px;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.btn-rojo { // en resumen a la class .btn-rojo le estamos extendiendo las propiedades de la clase .boton que esta arriba. (ver que usamos .btn-rojo en el html)
+    @extend .boton;  //no olvidar el punto y coma :D
+    background: #ff2732;
+}
+.btn-azul {
+    @extend .boton;
+    background: #246eb9;
+}
+.btn-verde {
+    @extend .boton;
+    background: #4fb560;
+}
+
+
+// con la class extend definimos una herencia . en este ejemplo los btn-color heredan las propiedades y valores de .boton
+
+//https://desarrolloweb.com/articulos/herencia-sass-extend.html
+

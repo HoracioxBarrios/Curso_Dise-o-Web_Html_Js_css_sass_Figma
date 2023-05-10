@@ -1,0 +1,44 @@
+body {
+	font-family:"Times New Roman", Arial, sans-serif, Helvetica;
+
+} 
+/* le cambiamos la fuente a todo el body */
+/* cuando escribimos una fuente que tiene espacio hay que hacerlo entre 
+comillas */
+/* se debe poner mas de una fuente por si no encuentra una, use otra */
+/* en windows no tenemos helvetica pero si en Mac */
+/*podemos descargar fuentes desde google fonts*/
+/* las fuentes que vienen escritas con espacio como : "Times New Roman" hay que ponerlas entre comollas */
+
+p {
+	text-align: justify;/*texto justificado*/
+
+	text-transform: capitalize; /*1ra letra mayusc*/
+
+	letter-spacing: 3px; /*espacio entre letras*/
+
+	line-height: 30px;/*altura de la linea*/
+}
+
+
+
+h1 {
+	font-family: "Times New Roman", Arial; /*Tipo de fuente*/
+	font-size: 20px; /*tamaño de fuente*/
+	font-style: normal; /*normal o cursiva :Italic*/
+	font-weight: normal;/*se puede usar para cambiar el ancho de la funte, en un H1 bold es predeterminado =negrita*/
+	color: blue;/*color de letra y no de fondo*/
+	text-align: left;/*ubicacion del texto izquierda es por defecto, se puede poner center, right o justify*/
+	text-decoration:underline;/*none o underline =subrayado ,o line through = tachado*/
+	text-transform: uppercase;/*tranforma a minuscula o mayusc lowercase o uppercase; hay otra Capitalize que hace que la prmera ltra sea Mayusc*/
+
+}
+
+/* algunas no se usan tanto cpmo :
+text decoration o text transform */
+
+/* las que mas se usan son
+font-family: "Times New Roman", Arial;
+font-size: 20px;
+font-style: normal
+font-weight */
